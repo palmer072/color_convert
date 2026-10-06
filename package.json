@@ -1,0 +1,17 @@
+{
+  "name": "color-convert",
+  "version": "0.1.0",
+  "description": "hex, rgb, hsl conversions that avoid rounding errors",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {}
+}

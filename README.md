@@ -56,3 +56,10 @@ All six functions are named exports from the package root:
 - `hslToRgb(hsl) -> [r, g, b]`
 - `hexToHsl(hex) -> [h, s, l]`
 - `hslToHex(hsl) -> string`
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
